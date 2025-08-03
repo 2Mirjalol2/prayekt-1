@@ -12,7 +12,7 @@ const Shop = () => {
 
   const addToCart = (phone) => {
     setCart([...cart, phone]);
-    toast.success("Mahsulot savatga qo‘shildi! 📦", {
+    toast.success("📦 Mahsulot savatga qo‘shildi!", {
       position: "top-center",
       autoClose: 2000,
       theme: "colored",
@@ -23,7 +23,7 @@ const Shop = () => {
     const updatedCart = [...cart];
     updatedCart.splice(index, 1);
     setCart(updatedCart);
-    toast.error("Mahsulot savatdan olib tashlandi! ❌", {
+    toast.error("❌ Mahsulot savatdan olib tashlandi!", {
       position: "top-center",
       autoClose: 2000,
       theme: "colored",
@@ -34,7 +34,7 @@ const Shop = () => {
     const updatedCart = [...cart];
     updatedCart.splice(index, 1);
     setCart(updatedCart);
-    toast.success("Mahsulot xarid qilindi! ✅", {
+    toast.success("✅ Mahsulot xarid qilindi!", {
       position: "top-center",
       autoClose: 2000,
       theme: "colored",
@@ -45,7 +45,7 @@ const Shop = () => {
     <div className="shop">
       <div className="shop-header">
         <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
-        <h1 className="shop-title">Telefon Do'koni</h1>
+        <h1 className="shop-title">📱 Telefon Do'koni</h1>
         <button className="cart-btn" onClick={() => setOpen(!open)}>
           🛒 Korzinka ({cart.length})
         </button>
@@ -64,16 +64,10 @@ const Shop = () => {
                   <div>
                     <h4>{item.name}</h4>
                     <p>{item.price}</p>
-                    <button
-                      onClick={() => handlePurchase(i)}
-                      className="buy-btn"
-                    >
+                    <button onClick={() => handlePurchase(i)} className="buy-btn">
                       Xarid qilish
                     </button>
-                    <button
-                      onClick={() => removeFromCart(i)}
-                      className="remove-btn"
-                    >
+                    <button onClick={() => removeFromCart(i)} className="remove-btn">
                       Bekor qilish
                     </button>
                   </div>

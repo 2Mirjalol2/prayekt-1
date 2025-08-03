@@ -1,3 +1,4 @@
+/* === Umumiy === */
 body {
   font-family: 'Segoe UI', sans-serif;
   background-color: #f5f7fa;
@@ -5,9 +6,71 @@ body {
   padding: 0;
 }
 
+/* === RO'YXATDAN O'TISH === */
+.register-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #83a4d4, #b6fbff);
+}
+
+.register-form {
+  background-color: #ffffff;
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  transition: transform 0.3s ease;
+}
+
+.register-form:hover {
+  transform: translateY(-4px);
+}
+
+.register-fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.register-input {
+  padding: 14px 16px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.register-input:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2);
+}
+
+.register-button {
+  padding: 14px;
+  border: none;
+  background: #4a90e2;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.register-button:hover {
+  background: #357ab8;
+}
+
+/* === SHOP SAHIFASI === */
+
 .shop {
   padding: 20px;
 }
+
 .shop-header {
   display: flex;
   align-items: center;
@@ -55,7 +118,6 @@ body {
   justify-content: center;
 }
 
-
 .phone-card {
   width: 180px; 
   background-color: #fff;
@@ -78,8 +140,6 @@ body {
   border-radius: 8px;
 }
 
-
-
 .phone-name {
   font-size: 15px;
   margin: 8px 0 4px;
@@ -93,27 +153,11 @@ body {
 }
 
 .buy-btn {
-  padding: 6px 12px;
-  font-size: 13px;
-  background-color: #198754;
-  border: none;
-  color: white;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.2s;
-}
-
-.buy-btn:hover {
-  background-color: #146c43;
-}
-
-
-
-.buy-btn {
-  background-color: #27ae60;
-  color: white;
   padding: 10px 14px;
+  font-size: 13px;
+  background-color: #27ae60;
   border: none;
+  color: white;
   border-radius: 8px;
   font-weight: bold;
   cursor: pointer;
@@ -124,15 +168,17 @@ body {
   background-color: #1e8449;
 }
 
+/* === CART === */
+
 .cart {
   background-color: #ffffff;
   border: 1px solid #ccc;
   border-radius: 12px;
   padding: 20px;
   margin-bottom: 30px;
-  max-width: 600px;       
-  max-height: 400px;   
-  overflow-y: auto; 
+  max-width: 600px;
+  max-height: 400px;
+  overflow-y: auto;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-left: auto;
   margin-right: auto;
@@ -143,7 +189,6 @@ body {
   flex-direction: column;
   gap: 15px;
 }
-
 
 .cart-card {
   display: flex;
