@@ -18,7 +18,7 @@ const RoyxatdanOtish = () => {
     });
 
     setTimeout(() => {
-      window.location.href = "/prayekt-1/#/shop";
+      window.location.href = '/prayekt-1/#/shop';
     }, 3000);
   };
 
