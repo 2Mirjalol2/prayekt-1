@@ -17,7 +17,6 @@ const RoyxatdanOtish = () => {
       theme: "colored",
     });
 
-    // ✅ 3 sekunddan keyin /shop sahifasiga to‘g‘ri yo‘naltiradi (HashRouter uchun)
     setTimeout(() => {
       window.location.href = "/prayekt-1/#/shop";
     }, 3000);

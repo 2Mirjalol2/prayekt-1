@@ -1,12 +1,9 @@
-/* === Umumiy === */
 body {
   font-family: 'Segoe UI', sans-serif;
   background-color: #f5f7fa;
   margin: 0;
   padding: 0;
 }
-
-/* === RO'YXATDAN O'TISH === */
 .register-container {
   min-height: 100vh;
   display: flex;
@@ -64,8 +61,6 @@ body {
 .register-button:hover {
   background: #357ab8;
 }
-
-/* === SHOP SAHIFASI === */
 
 .shop {
   padding: 20px;
@@ -167,8 +162,6 @@ body {
 .buy-btn:hover {
   background-color: #1e8449;
 }
-
-/* === CART === */
 
 .cart {
   background-color: #ffffff;
